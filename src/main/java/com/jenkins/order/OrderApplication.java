@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class OrderApplication {
 
 	public static void main(String[] args) {
+		System.out.println("STarting Application Order-Service");
 		SpringApplication.run(OrderApplication.class, args);
 	}
 
