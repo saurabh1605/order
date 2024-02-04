@@ -11,12 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/jenkins")
 public class TestJenkinsController {
 
-	@GetMapping("/testAPI")
+	@GetMapping("/test")
 	public String getJenkinsTest() {
+		System.out.println("In the API");
 		return "API Working";
 	}
 
-	@PostMapping
+	@PostMapping("/postJen")
 	public String saveJenkinsObj(@RequestBody RequestEntity<String> sample) {
 		return "";
 	}
